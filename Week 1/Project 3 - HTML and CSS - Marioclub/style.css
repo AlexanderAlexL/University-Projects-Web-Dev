@@ -1,0 +1,123 @@
+header{
+    background-color: rgb(235, 65, 35);
+    padding: 25;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+}
+header h1{
+    color: white;
+    border: 5px solid white;
+    padding: 8px 20px;
+    display: inline-block;
+    border-radius: 30px
+}
+.banner{
+    position: relative;
+    }
+    .banner img{
+        max-width: 100%;
+    }
+.banner .banner-text{
+    background-color: orange;
+    color: white;
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    top: 33%;
+}
+.banner h2{
+    font-size: 46px;
+}
+.banner h2 span{
+    font-size: 1.4em;
+}
+nav{
+    background-color: rgb(221, 221, 221);
+    padding: 25px;
+    position: sticky;
+    top: 100px;
+}
+nav li{
+   width: 25%; 
+   display: inline-block;
+   font-size: 22px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li a{
+    font-family: Tahoma;
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
+.join-the-club{
+    color: rgb(219, 32, 32);
+}
+
+body, ul, h2{
+margin: 0;
+padding: 0;
+font-family: Tahoma;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: rgb(219, 32, 32);
+    font-size: 36px;
+}
+article p{
+    color: rgb(46, 46, 46);
+    line-height: 1.8em;
+}
+.two-images{
+    text-align: center;
+    margin: 100px 0;
+    white-space: nowrap;
+}
+.two-images li{
+    display: inline-block;
+    width: 40%;
+    margin: 25px 5%;
+}
+.two-images li img{
+    max-width: 100%;
+}
+.join-today{
+    background-color: rgb(221, 221, 221);
+    padding: 60px 50px;
+    text-align: center;
+}
+.join-today h2{
+    font-size: 32px;
+}
+.join-today p{
+    font-size: 22px;
+    }
+form input{
+    text-align: center;
+    margin: 25px 5px;
+    padding: 10px 45px;
+    font-size: 22px;
+    border: 2px solid gray;
+    border-radius: 30px;
+}
+.footer{
+    background: rgb(235, 65, 35);
+    margin: 0%;
+    color: white;
+    font-size: 18px;
+    font-family: Tahoma;
+    padding: 20px;
+    text-align: center;
+}
