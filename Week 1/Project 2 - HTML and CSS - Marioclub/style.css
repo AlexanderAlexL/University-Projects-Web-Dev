@@ -18,9 +18,12 @@ header h1{
 .banner{
     position: relative;
     }
-    .banner img{
-        max-width: 100%;
-    }
+
+.banner img{
+    max-width: 100%;
+    height: auto;
+}
+
 .banner .banner-text{
     background-color: orange;
     color: white;
