@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* banner style */
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    background-image: url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.banner h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 72px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Navigation bar */
+
+.navbar{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.navbar div a{
+    text-decoration: none;
+    color: #E9C46A;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styling the Content elements */
+
+h2{
+    text-align: center;
+    color: white;
+    padding: 40px 15px;
+    margin: 80px 10px;
+}
+
+/* Styling Container with Flexboxes */
+
+.container{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.container img{
+    max-width: 600px;
+    align-items: center;
+}
+
+.container p{
+    max-width: 600px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.container > *{
+    flex: 1 1 600px;
+    margin: 50px;
+}
+
+/* Styling Container2 with Flexboxes */
+
+.container2{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+    align-items: center;
+}
+
+.container2 img{
+    max-width: 600px;
+}
+
+.container2 p{
+    max-width: 600px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.container2 > *{
+    flex: 1 1 600px;
+    margin: 50px;
+}
+
+.box3{
+    order: 2;
+}
+
+.box4{
+    order: 1;
+}
+
+/* Styling Container3 with Flexboxes */
+
+.container3{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+    align-items: center;
+}
+
+.container3 img{
+    max-width: 600px;
+}
+
+.container3 p{
+    max-width: 600px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.container3 > *{
+    flex: 1 1 600px;
+    margin: 50px;
+}
+
+/* Styling of Testimonials */
+
+article p{
+    color: blanchedalmond;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    margin: 100px 10px;
+}
+
+article{
+    margin: 200px 10px;
+}
