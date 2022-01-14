@@ -80,6 +80,7 @@ h2{
 .container > *{
     flex: 1 1 600px;
     margin: 50px;
+    max-width: 600px;
 }
 
 /* Styling Container2 with Flexboxes */
@@ -106,6 +107,7 @@ h2{
 .container2 > *{
     flex: 1 1 600px;
     margin: 50px;
+    max-width: 600px;
 }
 
 .box3{
@@ -140,6 +142,7 @@ h2{
 .container3 > *{
     flex: 1 1 600px;
     margin: 50px;
+    max-width: 600px;
 }
 
 /* Styling of Testimonials */
@@ -154,4 +157,16 @@ article p{
 
 article{
     margin: 200px 10px;
+}
+
+/* footer's styling' */
+footer p{
+ color: white;
+ text-align: center;
+ padding: 20px 10px;   
+}
+
+footer hr{
+    width: 50%;
+    align-items: center;
 }
