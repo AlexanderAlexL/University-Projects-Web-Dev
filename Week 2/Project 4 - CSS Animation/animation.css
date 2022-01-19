@@ -18,6 +18,7 @@ z-index: 2;
 width: 100vw;
 display: flex;
 top: 17vh;
+min-height: 42vh;
 }
 
 .grass img{
