@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+
+.sky{
+    background-image: url(img/background-nyc.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+}
+
+.skyline{
+    background-image: url(img/skyline.png);
+    height: 50vh;
+    width: 100%;
+    background-position-x: center;
+    background-repeat: cover;
+    position: absolute;
+    top: 280px;
+}
+
+.track{
+    background-image: url(img/track.png);
+    height: 30vh;
+    width: 700vw;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 85vh;
+    animation: carMove 8s linear infinite;
+}
+
+.car{
+    background-image: url(img/car_body.png);
+    background-size: 50%;
+    height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65vh;
+    left: 20%;
+    animation: shake .4s linear infinite;
+}
+
+.wheel1 img{
+width: 150px;
+position: relative;
+left: 88px;
+top: 70px;
+animation: wheelRotation 1s linear infinite;
+}
+
+.wheel2 img{
+    width: 150px;
+    position: relative;
+    left: 470px;
+    top: -75px;
+    animation: wheelRotation 1s linear infinite;
+}
+
+@keyframes wheelRotation{
+    100%{transform: rotate(360deg);}
+}
+
+@keyframes carMove {
+    100%{transform: translateX(-500vw);}
+}
+
+@keyframes shake{
+    0%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+}
