@@ -37,7 +37,7 @@ body{
 
 .car{
     background-image: url(img/car_body.png);
-    background-size: 50%;
+    background-size: 760px;
     height: 30vh;
     width: 100%;
     background-repeat: no-repeat;
