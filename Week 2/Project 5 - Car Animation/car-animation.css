@@ -22,7 +22,7 @@ body{
     background-position-x: center;
     background-repeat: cover;
     position: absolute;
-    top: 280px;
+    top: 40vh;
 }
 
 .track{
@@ -41,25 +41,25 @@ body{
     height: 30vh;
     width: 100%;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 65vh;
+    position: relative;
+    top: 68vh;
     left: 20%;
     animation: shake .4s linear infinite;
 }
 
 .wheel1 img{
 width: 150px;
-position: relative;
+position: absolute;
 left: 88px;
-top: 70px;
+top: 8.5vh;
 animation: wheelRotation 1s linear infinite;
 }
 
 .wheel2 img{
     width: 150px;
-    position: relative;
+    position: absolute;
     left: 470px;
-    top: -75px;
+    top: 8.5vh;
     animation: wheelRotation 1s linear infinite;
 }
 
@@ -80,5 +80,93 @@ animation: wheelRotation 1s linear infinite;
     }
     100%{
         transform: translateY(-4px);
+    }
+}
+
+/* Media Queries */
+
+/* extra small devices */
+@media only screen and (max-width: 600px) {
+    .car{
+        background-size: 50vw;
+        top: 82vh;
+    }
+    .wheel1 img{
+        width: 11vw;
+        left: 5vw;
+        top: 2.5vh;
+    }
+
+    .wheel2 img{
+        width: 12vw;
+        left: 30vw;
+        top: 2.5vh;
+    }
+
+    .skyline{
+        height: 42vh;
+        width: 100%;
+        background-position-x: center;
+        background-repeat: cover;
+        top: 45vh;
+        position: absolute;
+    }
+}
+
+/* screen width from 600px to 768px*/
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .car{
+        background-size: 40vw;
+        top: 82vh;
+    }
+
+    .wheel1 img{
+        width: 9vw;
+        left: 4vw;
+        top: 2.5vh;
+    }
+
+    .wheel2 img{
+        width: 9vw;
+        left: 24vw;
+        top: 2.5vh;
+    }
+
+    .skyline{
+        height: 42vh;
+        width: 100%;
+        background-position-x: center;
+        background-repeat: cover;
+        position: absolute;
+        top: 45vh;
+    }
+}
+
+/* screen width from 768px to 992px*/
+@media only screen and (min-width: 768px) and (max-width:992px){
+    .car{
+        background-size: 40vw;
+        top: 82vh;
+    }
+
+    .wheel1 img{
+        width: 9vw;
+        left: 4vw;
+        top: 3vh;
+    }
+
+    .wheel2 img{
+        width: 9vw;
+        left: 24vw;
+        top: 3.5vh;
+    }
+
+    .skyline{
+        height: 42vh;
+        width: 100%;
+        background-position-x: center;
+        background-repeat: cover;
+        position: absolute;
+        top: 45vh;
     }
 }
