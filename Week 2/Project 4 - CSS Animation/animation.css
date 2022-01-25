@@ -1,37 +1,38 @@
 body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container{
     background-image: url(img/background.jpg);
     background-position: center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    margin: 0%;
-    padding: 0;
+    background-repeat: no-repeat;
     overflow: hidden;
+    position: relative;
 }
 
 /* grass front of the cat */
 
 .grass{
-position: relative;
+background-image: url(img/grass-png.png);
+position: absolute;
 z-index: 2;
-width: 100vw;
-display: flex;
-top: 17vh;
-min-height: 42vh;
+width: 100%;
+height: 300px;
+bottom: 0;
+background-repeat: repeat-x;
 }
 
-.grass img{
-    width: 2400px;
-    z-index: 3;
-    align-items: flex-end;
-
-}
 
 /* Cat Animation */
 .cat{
     position:absolute;
-    top: 400px;
+    bottom: 90px;
     background-image: url(img/final-edit-cat-stripe-sheet.svg);
     width: 300px;
     height: 400px;
@@ -52,7 +53,7 @@ min-height: 42vh;
 
 /* bird animation */
 .bird{
-    position: static;
+    position: absolute;
     top: 100px;
     background-image: url(img/final-edit-bird-stripe-sheet.svg);
     width: 300px;
@@ -69,4 +70,28 @@ min-height: 42vh;
 @keyframes move-forward2{
     0%{transform: translateX(-100px);}
     100%{transform: translateX(100vw);}
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media  (max-width: 425px) {
+  
+    .cat{
+        width: 150px;
+        height: 200px;
+        background-size: 1200px;
+        bottom: 100px;
+    }
+
+    .bird{
+        width: 150px;
+        height: 200px;
+        background-size: 1200px;
+        top: 10vh;
+    }
+
+    .grass{
+        height: 250px;
+        background-size: cover;
+    }
 }
