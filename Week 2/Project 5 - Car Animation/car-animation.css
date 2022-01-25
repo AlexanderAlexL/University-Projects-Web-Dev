@@ -42,7 +42,7 @@ body{
     width: 100%;
     background-repeat: no-repeat;
     position: relative;
-    top: 68vh;
+    top: 69vh;
     left: 20%;
     animation: shake .4s linear infinite;
 }
@@ -51,7 +51,7 @@ body{
 width: 150px;
 position: absolute;
 left: 88px;
-top: 8.5vh;
+top: 84px;
 animation: wheelRotation 1s linear infinite;
 }
 
@@ -59,7 +59,7 @@ animation: wheelRotation 1s linear infinite;
     width: 150px;
     position: absolute;
     left: 470px;
-    top: 8.5vh;
+    top: 83.5px;
     animation: wheelRotation 1s linear infinite;
 }
 
@@ -88,19 +88,19 @@ animation: wheelRotation 1s linear infinite;
 /* extra small devices */
 @media only screen and (max-width: 600px) {
     .car{
-        background-size: 50vw;
-        top: 82vh;
+        background-size: 272px;
+        top: 85vh;
     }
     .wheel1 img{
-        width: 11vw;
-        left: 5vw;
-        top: 2.5vh;
+        width: 58px;
+        left: 29.5px;
+        top: 30px;
     }
 
     .wheel2 img{
-        width: 12vw;
-        left: 30vw;
-        top: 2.5vh;
+        width: 58px;
+        left: 166px;
+        top: 30px;
     }
 
     .skyline{
@@ -116,20 +116,19 @@ animation: wheelRotation 1s linear infinite;
 /* screen width from 600px to 768px*/
 @media only screen and (min-width: 600px) and (max-width: 768px){
     .car{
-        background-size: 40vw;
-        top: 82vh;
+        background-size: 320px;
+        top: 84vh;
     }
-
     .wheel1 img{
-        width: 9vw;
-        left: 4vw;
-        top: 2.5vh;
+        width: 66px;
+        left: 35.5px;
+        top: 34px;
     }
 
     .wheel2 img{
-        width: 9vw;
-        left: 24vw;
-        top: 2.5vh;
+        width: 68px;
+        left: 197px;
+        top: 35px;
     }
 
     .skyline{
@@ -145,20 +144,19 @@ animation: wheelRotation 1s linear infinite;
 /* screen width from 768px to 992px*/
 @media only screen and (min-width: 768px) and (max-width:992px){
     .car{
-        background-size: 40vw;
-        top: 82vh;
+        background-size: 412px;
+        top: 80vh;
     }
-
     .wheel1 img{
-        width: 9vw;
-        left: 4vw;
-        top: 3vh;
+        width: 88px;
+        left: 44.5px;
+        top: 42px;
     }
 
     .wheel2 img{
-        width: 9vw;
-        left: 24vw;
-        top: 3.5vh;
+        width: 89px;
+        left: 250px;
+        top: 42px;
     }
 
     .skyline{
