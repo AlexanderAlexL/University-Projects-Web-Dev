@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Excercise</title>
+    <title>Swap Variables - Excercise</title>
     <style>
         body {
             background-color: darkcyan;
@@ -23,24 +23,21 @@
             justify-content: center;
         }
     </style>
-
 </head>
 
 <body>
-    <h1>This is a Console Excercise: logging name to the console and capitalizing first letter.
-        <br>Check Console for results. (Press F12)
-    </h1>
+    <h1>This is a Console Excercise: swapping variables. <br>Check Console for results. (Press F12)</h1>
     <script>
-        let name = prompt("Please, enter your name to the box below!", "Write here");
-        let firstCharacter = name.slice(0, 1);
-        let firstCapital = firstCharacter.toUpperCase();
-        let restName = name.slice(1);
-        let result = firstCapital + restName;
-        console.log(result);
+        var a, b;
+        a = 3;
+        b = 8;
+        console.log('before the swap: a == 3 and b == 8');
 
-        var a = "3";
-        var b = "8";
+        var temp = a;
+        a = b;
+        b = temp;
 
+        console.log('Now, query the variable "a" and variable "b". It should be swapped now by declaring a temporary variable.')
 
     </script>
 </body>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Excercise</title>
+    <title>Who's buying lunch today?</title>
     <style>
         body {
             background-color: darkcyan;
@@ -27,22 +27,11 @@
 </head>
 
 <body>
-    <h1>This is a Console Excercise: logging name to the console and capitalizing first letter.
-        <br>Check Console for results. (Press F12)
+    <h1>This is a Console Excercise: randomly selecting names from an array. <br>Check Console for results. <br>(Press
+        F12
+        and refresh window for re-generating the name.)
     </h1>
-    <script>
-        let name = prompt("Please, enter your name to the box below!", "Write here");
-        let firstCharacter = name.slice(0, 1);
-        let firstCapital = firstCharacter.toUpperCase();
-        let restName = name.slice(1);
-        let result = firstCapital + restName;
-        console.log(result);
-
-        var a = "3";
-        var b = "8";
-
-
-    </script>
+    <script src="lunch.js"></script>
 </body>
 
 </html>
