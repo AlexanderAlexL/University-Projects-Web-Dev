@@ -1,9 +1,13 @@
+body{
+    overflow-x: hidden;
+}
+
 .containerHeaderDisc{
     max-width: 1200px;
     padding: 0 40px;
     margin: 0 8vw;
     flex-grow: 1;
-}
+    }
 
 .discover-main-section{
     display: flex;
@@ -84,4 +88,25 @@
      line-height: 1.2;
      font-weight: 300;
      color: #F1FAEE;
+    }
+
+    .circle1{
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #457B9D 0%, rgba(196, 196, 196, 0) 45.93%);        z-index: -1;
+        bottom: 5vh;
+        left: -5vw;
+    }
+
+    .circle2{
+        position: absolute;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #457B9D 0%, rgba(230, 57, 70, 0.19) 100%);
+        z-index: -1;
+        top: -5vh;
+        left: 85vw;
     }
