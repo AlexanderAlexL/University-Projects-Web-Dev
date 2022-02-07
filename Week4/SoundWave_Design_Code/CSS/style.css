@@ -90,6 +90,7 @@ body{
      font-size: small;
      line-height: 1.2em;
      text-align: center;
+     margin-top: 10vh;
  }
 
  .social-link img{
@@ -126,7 +127,6 @@ body{
         font-size: 1.2rem;
         font-family: Bungee;
         color: #1D3557;
-        background-image: url(/IMG/);
     }
 
     .joinBtn:hover{

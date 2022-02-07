@@ -1,0 +1,114 @@
+.containerHeaderDisc{
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 8vw;
+    flex-grow: 1;
+}
+
+.btnJoinForm{
+        background: #DD515D;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+        border-radius: .5rem;
+        padding: .3rem 2rem;
+        text-decoration: none;
+        font-size: 1rem;
+        font-family: Bungee;
+        color: #1D3557;
+        cursor: pointer;
+        margin: 20px;
+        line-height: 1em;
+    }
+
+    .btnJoinForm:hover{
+        color: white;
+        background: #457B9D;
+    }
+
+    .join-main-section{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .titleJoin{
+    font-family: Bungee;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    color: #A8DADC;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+    }
+
+    .subtitleJoin{
+    font-weight: 500;
+     font-size: 1.5em;
+     margin-bottom: 3rem;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.2;
+     font-weight: 300;
+     color: #F1FAEE;
+    }
+    
+    .call-to-action{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    .join-form{
+        background: linear-gradient(180deg, #457B9D 0%, rgba(230, 57, 70, 0.31) 100%);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        max-width: 50%;
+        height: 60vh;
+        padding: 2rem 4rem;
+    }
+
+    .input-group{
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+            }
+
+    .input-group label{
+        font-weight: bold;
+        margin-bottom: .5rem;
+    }
+
+    .inputField{
+        background: #457B9D;
+        box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        min-height: 2rem;
+        color: white;
+        font-size: 1em;
+        padding: .5em;
+    }
+
+    .inputField:focus{
+        background-color: #1D3557;
+    }
+
+    @media(max-width: 900px){
+        .join-main-section{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .containerHeaderDisc {
+            max-width: 100%;
+            padding: 0 0;
+            margin: 0 3vw;
+            flex-grow: 1;
+        }        
+    }
+
+    .join-form{
+        min-width: 30vw;
+        max-width: inherit;
+        margin: 2rem 0;
+    }
+
