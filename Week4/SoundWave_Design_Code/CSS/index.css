@@ -1,0 +1,63 @@
+.home-main-section{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .img-wrapper{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    }
+
+.home-main-section .imageLady{
+    background: url(/University-Projects-Web-Dev/Week4/SoundWave_Design_Code/IMG/woman-music-noBackg.png);
+    flex-grow: 1;
+    max-height: 90vh;
+    min-width: 40vw;        
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    }
+
+    .home-main-section .call-to-action{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem;
+        align-self: center;
+    }
+
+    @media(max-width: 900px){
+        .home-main-section .img-wrapper{
+            display: none;
+        }
+
+        .home-main-section{
+            justify-content: center;
+        }
+    }
+
+    .circle1{
+        position: absolute;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #457B9D 0%, rgba(196, 196, 196, 0) 45.93%);        z-index: -1;
+        bottom: 5vh;
+        left: -5vw;
+    }
+
+    .circle2{
+        position: absolute;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #457B9D 0%, rgba(230, 57, 70, 0.19) 100%);
+        z-index: -1;
+        top: -5vh;
+        left: 85vw;
+    }

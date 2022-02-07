@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Coiny&family=Roboto&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1D3557;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.full-height-grow{
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-logo{
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    max-width: 6vw;
+    min-width: 40px;
+    height: auto;
+}
+
+.brand-logo img{
+    max-width: 6vw;
+    min-width: 40px;
+    height: auto;
+}
+
+.brandName{
+    font-family: 'Coiny', cursive;
+    font-size: 1.25em;
+    margin-left: 1rem;
+    color: #F1FAEE;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: 'Bungee', cursive;
+}
+
+.main-nav a:hover {
+    color: #D95D68;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  height: 100px;
+ }
+
+ .titleLanding{
+    font-family: Bungee;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color: #A8DADC;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    line-height: 1.2;
+ }
+
+ .subtitle{
+     font-weight: 500;
+     font-size: 1.6em;
+     margin-bottom: 3rem;
+     font-family: 'Roboto', sans-serif;
+     line-height: 1.2;
+     font-weight: 600;
+     color: #F1FAEE;
+    }
+
+    .joinBtn{
+        background: #DD515D;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: .5rem;
+        padding: .75rem 3rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: Bungee;
+        color: #1D3557;
+        background-image: url(/IMG/);
+    }
+
+    .joinBtn:hover{
+        color: white;
+        background: #457B9D;
+    }
+
