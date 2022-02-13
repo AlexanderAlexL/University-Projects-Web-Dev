@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  text-align:justify;
+  padding: 5rem;
+
+  transition: background 0.5s linear, color 0.5s linear;
+}
+
+h2{
+  margin: 50px;
+}
+
+body.dark {
+  background-color: #293241;
+  color: white;
+}
+
+.toggleContainer {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#toggle {
+  background-color: #293241;
+  border-radius: 30%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  transition: background 0.3s linear;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+#toggle:hover{
+  background-color: #3d5a80;
+}
+
+body.dark #toggle {
+  background-color: #fff;
+  color: #293241;
+  font-weight: inherit;
+  font-weight: bold;
+}
+

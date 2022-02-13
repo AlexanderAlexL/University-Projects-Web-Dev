@@ -13,12 +13,22 @@ body {
     min-height: 100vh;
 }
 
-.heart {
+.snow {
     position: fixed;
     top: -1vh;
     font-size: 2rem;
     transform: translateY(0);
     animation: fall 3s linear forwards;
+    color: #0a9396;
+}
+
+.snow2 {
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+    color: #bde0fe;
 }
 
 @keyframes fall {

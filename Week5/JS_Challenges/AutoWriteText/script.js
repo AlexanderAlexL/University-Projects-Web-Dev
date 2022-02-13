@@ -1,11 +1,52 @@
-var i = 0;
-var txt = 'Lorem ipsum typing effect!'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("demo").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
+class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = '';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 7);
+        this.type();
+        this.isDeleting = false;
     }
+
+    type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+        let typeSpeed = 200;
+
+        if (this.isDeleting) {
+            typeSpeed /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            typeSpeed = this.wait;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.wordIndex++;
+            typeSpeed = 500;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', init);
+
+function init() {
+    const txtElement = document.querySelector('.txt-type');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+    new TypeWriter(txtElement, words, wait);
 }
