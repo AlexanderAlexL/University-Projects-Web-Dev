@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="brand-title"><a href="index.html">AlexanderLambert.co.uk</a></div>
+        <a href="#" class="toggle-button">&#9776</a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#servicesNav">Services</a></li>
+                <li><a href="#portfolioNav">Portfolio</a></li>
+                <li><a href="#aboutNav">About</a></li>
+                <li><a href="#contactNav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="containerForMsg">
+        <h1 id="txtMsg">Hi, I'm Alex. I'm a <br>
+            <span class="txt-type" data-wait="3000" data-words='["Web Developer.", "UX/UI Designer."]'></span>
+        </h1>
+    </div>
+    <section class="banner">
+        <img src="IMG/sky.jpg" id="bg">
+        <img src="IMG/moon2.png" id="moon">
+        <img src="IMG/cityscape.png" id="cityscape">
+        <img src="IMG/officeWall.png" id="officeWall">
+        <img src="IMG/office.png" id="office">
+    </section>
+
+    <!-- Services -->
+    <section class="sectionServices" id="servicesNav">
+        <h1>Services</h1>
+        <div class="services">
+            <div class="service-1">
+                <div class="shapes">
+                    <div class="shape-1 right"></div>
+                    <div class="shape-2 right"></div>
+                    <div class="shape-3 right"></div>
+                </div>
+                <div class="img">
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_ghs9bkkc.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="description">
+                    <h2>Web Design</h2>
+                    <p>If you need a website but you don't know where to start, then you'll probably need UX and UI
+                        design to plan the Wireframes/prototypes, archtecture and also the visual design, colors and
+                        typography of your website. I can help you with this. I use Figma for the design process at this
+                        stage but I am familiar with other wireframing and prototyping design tools too. Web design is
+                        an important part for delivering the right message to your customers.
+                    </p>
+                </div>
+                <div class="shapes">
+                    <div class="shape-4 right"></div>
+                    <div class="shape-5 right"></div>
+                    <div class="shape-6 right"></div>
+                </div>
+            </div>
+
+            <div class="service-1">
+                <div class="shapes">
+                    <div class="shape-1 right"></div>
+                    <div class="shape-2 right"></div>
+                    <div class="shape-3 right"></div>
+                </div>
+                <div class="img">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_jtbfg2nb.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="description">
+                    <h2>Web Development</h2>
+                    <p>Following the web design, I implement the design into code. For the front-end development I like
+                        using free-hand code such as vanilla HTML, CSS and JavaScript because of the unlimited
+                        opportunities with free-hand code. However, I am familiar with CSS frameworks and JS libraries
+                        such as Bootstrap, ReactJS (in progress). If your preference is a WordPress based website,
+                        I can help you with that too. Currently, I am focusing on the front-end development.
+                    </p>
+                </div>
+                <div class="shapes">
+                    <div class="shape-4 right"></div>
+                    <div class="shape-5 right"></div>
+                    <div class="shape-6 right"></div>
+                </div>
+            </div>
+
+            <div class="service-1">
+                <div class="shapes">
+                    <div class="shape-1 right"></div>
+                    <div class="shape-2 right"></div>
+                    <div class="shape-3 right"></div>
+                </div>
+                <div class="img">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_smuahfgt.json"
+                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                </div>
+                <div class="description">
+                    <h2>SEO</h2>
+                    <p>SEO or Search Engine Optimization is the process of making your website more competitive in the
+                        Search Engine Ranking Pages. One of the most importants search engines is Google. SEO is a
+                        complex process that requires keyword research, proper on-page SEO, off-page SEO and technical
+                        SEO. It's important to implement the appropriate principles during the design and development
+                        process too. Search Engine Optimization is a non-stop process.</p>
+                </div>
+                <div class="shapes">
+                    <div class="shape-4 right"></div>
+                    <div class="shape-5 right"></div>
+                    <div class="shape-6 right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolioNav">
+        <h2 class="portfolioTitle">Portfolio</h2>
+
+        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+            <div class="media-element">
+                <img src="/IMG/SoundWave.PNG" alt="music app design">
+                <h3 class="title">Music Streaming Website</h3>
+                <p>
+                    <strong>Technology</strong>: HTML, CSS
+                </p>
+                <p>
+                    For this project I had to design the front-end of the music streaming website. I used Figma for the
+                    UX design. For the development I used vanilla HTML, CSS and JavaScript. It's fully responsive for
+                    mobile devices.
+                </p>
+                <button><a
+                        href="https://github.com/AlexanderAlexL/University-Projects-Web-Dev/tree/main/Week4/SoundWave_Design_Code"
+                        target="_blank">Check
+                        GitHub</a>
+                </button>
+            </div>
+            <div class="media-element">
+                <img src="/IMG/CarAnimation.PNG" alt="">
+                <h3 class="title">Car Animation with CSS</h3>
+                <p>
+                    <strong>Technology</strong>: HTML, CSS
+                </p>
+                <p>
+                    This was a project to animate static images to imitate the movement of the car (like the vertical
+                    movement of the car's body, circular movement of the wheels and horizontal movement of the road).
+                    All kind of images, svg files can be animated by CSS and JavaScript and these implemented in the web
+                    design.
+                </p>
+                <button><a
+                        href="https://github.com/AlexanderAlexL/University-Projects-Web-Dev/tree/main/Week%202/Project%205%20-%20Car%20Animation"
+                        target="_blank">Check
+                        GitHub</a>
+                </button>
+            </div>
+            <div class="media-element">
+                <img src="/IMG/FormValidation.PNG" alt="">
+                <h3 class="title">Form Validation using JavaScript</h3>
+                <p>
+                    <strong>Technology</strong>: HTML, CSS, JavaScript
+                </p>
+                <p>
+                    This mini-project was about Form Validation using JavaScript. Form validation can be a complex
+                    process, but nonetheless, it is very important for the security of websites. Using JavaScript we can
+                    implement rules for user registration and we can verify the different input fields automatically to
+                    increase the compliance with the security rules of the company.
+                </p>
+                <button><a
+                        href="https://github.com/AlexanderAlexL/University-Projects-Web-Dev/tree/main/Week5/FormValidationV2"
+                        target="_blank">Check
+                        GitHub</a>
+                </button>
+            </div>
+            <div class="media-element">
+                <img src="/IMG/CartoonAnimation.PNG" alt="">
+                <h3 class="title">Cartoon Animation with CSS Using Sprite Sheet</h3>
+                <p>
+                    <strong>Technology</strong>: HTML, CSS
+                </p>
+                <p>
+                    This project was similar to the Car Animation project where I had to animate static images. In this
+                    case I had to use a sprite sheet to animate the movement of the cat and the bird. There are
+                    different layers of vector graphics within this project and these are animated using CSS animation,
+                    keyframes and sprite sheets.
+                </p>
+                <button><a
+                        href="https://github.com/AlexanderAlexL/University-Projects-Web-Dev/tree/main/Week%202/Project%204%20-%20CSS%20Animation"
+                        target="_blank">Check
+                        GitHub</a>
+                </button>
+            </div>
+            <div class="media-element">
+                <img src="/IMG/MarioClub.PNG" alt="">
+                <h3 class="title">Landing Page Development</h3>
+                <p>
+                    <strong>Technology</strong>: HTML, CSS
+                </p>
+                <p>
+                    This was an early project within the Bootcamp using HTML and CSS to develop the MarioClub's landing
+                    page based on a set design. This has been developed to be fully responsive.
+                </p>
+                <button><a
+                        href="https://github.com/AlexanderAlexL/University-Projects-Web-Dev/tree/main/Week%201/Project%202%20-%20HTML%20and%20CSS%20-%20Marioclub"
+                        target="_blank">Check
+                        GitHub</a>
+                </button>
+            </div>
+
+            <div class="media-element">
+                <img src="/IMG/GitHub.PNG" alt="">
+                <h3 class="title">For more projects, check my GitHub profile!</h3>
+                <p>
+                    <strong>Technology</strong>: HTML, CSS, JavaScript
+                </p>
+                <p>
+                    If you want to see more information about my experience, like projects, excercises, then please feel
+                    free to
+                    check my GitHub account where I upload the most recent files.
+                </p>
+                <button><a href="https://github.com/AlexanderAlexL" target="_blank">Check
+                        GitHub</a>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <!-- END OF PORTFOLIO -->
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="aboutNav">
+
+        <div class="aboutMe">
+            <img src="/IMG/me.png" alt="" class="bio-image">
+            <div class="bio">
+                <h1>About Me</h1>
+                <p>Hi, thank you for visiting my website. I'm Alex Lambert, a freelance web developer located in
+                    London's neighbourhood. Currently, I am studying full-stack web development at Bath Spa University
+                    but in my freetime I try to soak in the knowledge of web development. I love the creativity and
+                    limitless opportunities in the design and development process. <br><br><strong>Contact me if you
+                        need
+                        help with
+                        a project!</strong></p>
+            </div>
+            <div class="box box-1">
+                <h3>Studies</h3>
+                <h4>Bath Spa University: Web Development</h4>
+                <p>
+                    I am studying full-stack web development at Bath Spa University's Bootcamp. This enables me to
+                    design
+                    and develop both front-end and back-end applications. Please, see the technologies I use in the next
+                    box.
+                </p>
+                <h4>Northumbria University: MSc Psychology</h4>
+                <p>
+                    Many people are surprised when they hear how important is Psychology in web development. Knowing
+                    the way
+                    people think is essential not only in Cognitive Psychology but also in UX/UI design and in
+                    digital
+                    marketing. I can use my knowledge in Cognitive Psychology and the Principles of Gestalt
+                    Psychology to
+                    develop more effective projects.
+                </p>
+                <h4>Kodolanyi Janos University: BSc Economics</h4>
+                <p>
+                    Studying Economics and working for multinational corporates in the last few years helps me
+                    better
+                    understand the needs of business clients.
+                </p>
+            </div>
+            <div class="box box-2">
+                <h3>Technologies I use</h3>
+                <h4>Front-End: HTML, CSS, JavaScript, Bootstrap (ReactJS, GSAP, SCSS in progress)</h4>
+                <p>
+                    Front-end development I use free-handed code of HTML, CSS, JavaScript. I am also familiar with
+                    Bootstrap but I prefer the unlimited possibilities of vanilla code. I am working on my knowledge of
+                    GSAP and SCSS too. For UX/UI design I use Figma but familiar with Just-in-Mind too.
+                </p>
+                <h4>Back-end Development (in progress): NodeJS, PHP, MySQL</h4>
+                <p>
+                    My studies in server-side development are in progress. The main focus rightnow is NodeJS but
+                    because I am working on WordPress sites for some clients PHP and MySQL studies are coming soon.
+                </p>
+                <h4>WordPress</h4>
+                <p>
+                    I am familiar with WordPress Development and Divi. Considering that WordPress is one of the
+                    most popular CMS I wish to continue to offer WordPress sites if it better fits for my
+                    Clients. PHP and MySQL studies are coming soon for back-end dev.
+                </p>
+            </div>
+            <div class="box box-3">
+                <h3>Search Engine Optimization (SEO)</h3>
+                <h4>Keyword Research</h4>
+                <p>
+                    I am familiar with several keyword research tools such as SemRush, Ubersuggest, Moz. Keyword
+                    Research is
+                    important for digital marketing and Google Ads. I can help you in keyword research for your campaign
+                    and
+                    in determining the right keyword difficulty.
+                </p>
+                <h4>On-Page SEO and Off-Page SEO</h4>
+                <p>
+                    The right structuring of your website is important for higher SERP ranking. I am familiar with the
+                    principles of On-Page SEO and also Off-Page SEO.
+                </p>
+                <h4>Technical SEO</h4>
+                <p>
+                    There are some technical principles for higher SERP ranking and I am familiar with these and
+                    actively
+                    implementing them in my development process (e.g. importance of https, disadvantage of duplicate
+                    content, XML sitemap etc.)
+                </p>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- END OF ABOUT SECTION -->
+
+    <!-- START OF CONTACT -->
+
+    <section class="contact" id="contactNav">
+        <div class="contactFlex">
+            <div class="imgBox">
+                <img src="/IMG/contact.jpg" alt="contact page">
+            </div>
+            <div class='textBox'>
+                <h2>Contact Me</h2>
+                <p>If you would like to contact me, <br>please use LinkedIn or GitHub. <br>Thank you!</p>
+                <button style="font-size:24px"><a href="https://www.linkedin.com/in/lambertalexander/"
+                        target="_blank">Contact Me on
+                        LinkedIn <i class="fa fa-linkedin-square"></i></a></button>
+                <button style="font-size:24px"><a href="https://github.com/AlexanderAlexL" target="_blank">Contact Me on
+                        GitHub <i class="fa fa-github"></i></a></button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- START OF CONTACT -->
+
+    <!-- START OF FOOTER -->
+
+    <Footer>
+        <div>
+            AlexanderLambert.co.uk
+        </div>
+    </Footer>
+
+    <!-- END OF FOOTER -->
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
