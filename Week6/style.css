@@ -378,6 +378,7 @@ justify-content: center;
   box-shadow: rgba(36, 36, 36, 0.747) 15px 10px 10px;
   max-height: 80vh;
   position: relative;
+  overflow: auto;
 }
 
 .media-element img{
