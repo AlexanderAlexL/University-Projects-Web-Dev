@@ -371,11 +371,13 @@ justify-content: center;
 .media-element{
   display: grid;
   grid-template-rows: min-content;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem;
+  padding: 1.5rem;
   background: #2b2d42;
   border-radius: 5px;
   box-shadow: rgba(36, 36, 36, 0.747) 15px 10px 10px;
+  max-height: 80vh;
+  position: relative;
 }
 
 .media-element img{
@@ -400,8 +402,9 @@ justify-content: center;
 border-radius: 5px;
 padding: 7px;
 position: relative;
-margin-top: 50px;
-bottom: 20px;
+bottom: 0px;
+height: 50px;
+margin-top: auto;
 }
 
 .portfolio button:hover{
@@ -714,6 +717,17 @@ footer div{
   }
 
 @media(max-width: 700px){
+  .media-element{
+    font-size: 80%;
+  }
+
+  .portfolio button{
+    padding: 7;
+    max-height: 40px;
+    }
+}
+
+@media(max-width: 1024px){
   .toggle-button{
     display: flex;
   }
@@ -750,11 +764,6 @@ footer div{
   .navbar-links.active{
     display: flex;
   }
-
-  .portfolio button{
-    padding: 7;
-    max-height: 40px;
-    }
 }
 
 @media(max-width: 600px){
@@ -767,4 +776,18 @@ footer div{
   .portfolio{
     padding: 5px;
   }
+}
+
+@media(max-width: 450px){
+
+  .brand-title a{
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .toggle-button{
+    top: 1.2rem;
+  }
+
+  
 }
