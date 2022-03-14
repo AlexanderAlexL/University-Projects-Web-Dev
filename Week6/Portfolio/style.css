@@ -326,6 +326,11 @@ justify-content: center;
   text-align: justify;
 }
 
+.img img{
+  max-width: 300px;
+  max-height: 300px;
+}
+
 
 /* PORTFOLIO STYLE */
 
